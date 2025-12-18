@@ -17,7 +17,6 @@ apply transformer based nlp model to text classification
 | 128          | 0.9479       | 0.9480       | 10.4            |
 | 256          | 0.9468       | 0.9469       | 20.4            |
 | 512          | 0.9479       | 0.9479       | 41.4            |
-| ------------ | ------------ | ------------ | --------------- |
 
 * max_length=64: Shorter input length leads to information loss, as important contextual cues may be truncated.
 * max_length=128: This suggests that most informative content is captured within the first 128 tokens, and additional context provides diminishing returns.
@@ -35,7 +34,6 @@ This indicates that most task-relevant information is contained within the first
 | 2            | 0.1907       | 0.9482       | 0.9482          |
 | 3            | 0.1895       | 0.9479       | 0.9480          |
 | 4            | 0.1881       | 0.9475       | 0.9475          |
-| ------------ | ------------ | ------------ | --------------- |
 
 ### Effect of Training Epochs
 Results show that performance peaks at epoch 2, with no further improvement observed in later epochs.
