@@ -1,0 +1,45 @@
+Classification Report:
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.95      0.96      1900
+           1       0.99      0.99      0.99      1900
+           2       0.92      0.91      0.92      1900
+           3       0.92      0.93      0.92      1900
+
+    accuracy                           0.95      7600
+   macro avg       0.95      0.95      0.95      7600
+weighted avg       0.95      0.95      0.95      7600
+
+Confusion Matrix:
+
+[[1814    8   46   32]
+ [   9 1879    5    7]
+ [  31    7 1738  124]
+ [  27    8   92 1773]]
+Sample Misclassified Cases:
+
+                                                text  true_label  pred_label
+0  Some People Not Eligible to Get in on Google I...           3           2
+1  Dell Exits Low-End China Consumer PC Market  H...           3           2
+2  Promoting a Shared Vision As Michael Kaleko ke...           3           2
+3  Intel to delay product aimed for high-definiti...           2           3
+4  IBM Buys Two Danish Services Firms IBM said Tu...           3           2
+
+Robustness Test:
+
+Original: {'label': 'LABEL_2', 'score': 0.9925451874732971}
+Perturbed: {'label': 'LABEL_2', 'score': 0.9939792156219482}
+---
+Original: {'label': 'LABEL_3', 'score': 0.998516857624054}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9985692501068115}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9986670017242432}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9987338185310364}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9976215958595276}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9976059198379517}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9973087310791016}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9974405765533447}
+---

@@ -1,0 +1,45 @@
+Classification Report:
+
+              precision    recall  f1-score   support
+
+           0       0.97      0.95      0.96      1900
+           1       0.99      0.99      0.99      1900
+           2       0.92      0.92      0.92      1900
+           3       0.92      0.93      0.92      1900
+
+    accuracy                           0.95      7600
+   macro avg       0.95      0.95      0.95      7600
+weighted avg       0.95      0.95      0.95      7600
+
+Confusion Matrix:
+
+[[1812    9   45   34]
+ [   9 1876    8    7]
+ [  28    5 1750  117]
+ [  24    7  102 1767]]
+Sample Misclassified Cases:
+
+                                                text  true_label  pred_label
+0  Some People Not Eligible to Get in on Google I...           3           2
+1  Venezuela Prepares for Chavez Recall Vote Supp...           0           2
+2  Dell Exits Low-End China Consumer PC Market  H...           3           2
+3  Promoting a Shared Vision As Michael Kaleko ke...           3           1
+4  Intel to delay product aimed for high-definiti...           2           3
+
+Robustness Test:
+
+Original: {'label': 'LABEL_2', 'score': 0.9932342171669006}
+Perturbed: {'label': 'LABEL_2', 'score': 0.9923149943351746}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9987240433692932}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9987990856170654}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9987383484840393}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9988157749176025}
+---
+Original: {'label': 'LABEL_3', 'score': 0.997974693775177}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9981191754341125}
+---
+Original: {'label': 'LABEL_3', 'score': 0.997305154800415}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9974149465560913}
+---

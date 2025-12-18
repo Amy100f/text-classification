@@ -1,0 +1,45 @@
+Classification Report:
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96      1900
+           1       0.99      0.98      0.99      1900
+           2       0.93      0.91      0.92      1900
+           3       0.91      0.94      0.93      1900
+
+    accuracy                           0.95      7600
+   macro avg       0.95      0.95      0.95      7600
+weighted avg       0.95      0.95      0.95      7600
+
+Confusion Matrix:
+
+[[1819   10   42   29]
+ [  14 1870    8    8]
+ [  34    5 1724  137]
+ [  24    8   82 1786]]
+Sample Misclassified Cases:
+
+                                                text  true_label  pred_label
+0  Shoppach doesn't appear ready to hit the next ...           1           0
+1  Venezuela Prepares for Chavez Recall Vote Supp...           0           2
+2  Promoting a Shared Vision As Michael Kaleko ke...           3           2
+3  Intel to delay product aimed for high-definiti...           2           3
+4  Yahoo! Ups Ante for Small Businesses Web giant...           2           3
+
+Robustness Test:
+
+Original: {'label': 'LABEL_2', 'score': 0.9962266683578491}
+Perturbed: {'label': 'LABEL_2', 'score': 0.9955267310142517}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9995397329330444}
+Perturbed: {'label': 'LABEL_3', 'score': 0.999553382396698}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9996304512023926}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9996359348297119}
+---
+Original: {'label': 'LABEL_3', 'score': 0.999461829662323}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9994438290596008}
+---
+Original: {'label': 'LABEL_3', 'score': 0.99949049949646}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9995220899581909}
+---

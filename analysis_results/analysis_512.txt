@@ -1,0 +1,45 @@
+Classification Report:
+
+              precision    recall  f1-score   support
+
+           0       0.96      0.96      0.96      1900
+           1       0.99      0.99      0.99      1900
+           2       0.92      0.92      0.92      1900
+           3       0.92      0.93      0.93      1900
+
+    accuracy                           0.95      7600
+   macro avg       0.95      0.95      0.95      7600
+weighted avg       0.95      0.95      0.95      7600
+
+Confusion Matrix:
+
+[[1815    7   48   30]
+ [  12 1874    7    7]
+ [  31    5 1747  117]
+ [  34    6   92 1768]]
+Sample Misclassified Cases:
+
+                                                text  true_label  pred_label
+0  Some People Not Eligible to Get in on Google I...           3           2
+1  Intel to delay product aimed for high-definiti...           2           3
+2  IBM Buys Two Danish Services Firms IBM said Tu...           3           2
+3  Oil prices bubble to record high The price of ...           0           2
+4  Intuit Posts Wider Loss After Charge (Reuters)...           3           2
+
+Robustness Test:
+
+Original: {'label': 'LABEL_2', 'score': 0.9931596517562866}
+Perturbed: {'label': 'LABEL_2', 'score': 0.9914529323577881}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9989408850669861}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9989564418792725}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9986377358436584}
+Perturbed: {'label': 'LABEL_3', 'score': 0.998694121837616}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9982775449752808}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9982070922851562}
+---
+Original: {'label': 'LABEL_3', 'score': 0.9972898960113525}
+Perturbed: {'label': 'LABEL_3', 'score': 0.9973655343055725}
+---

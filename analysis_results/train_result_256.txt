@@ -1,0 +1,2 @@
+{'train_runtime': 2731.7254, 'train_samples_per_second': 131.785, 'train_steps_per_second': 8.237, 'train_loss': 0.1489623041788737, 'epoch': 3.0}
+evaluation results: {'eval_loss': 0.2363351583480835, 'eval_accuracy': 0.9468421052631579, 'eval_macro_f1': 0.9468971206105978, 'eval_runtime': 20.4393, 'eval_samples_per_second': 371.833, 'eval_steps_per_second': 23.24, 'epoch': 3.0}
